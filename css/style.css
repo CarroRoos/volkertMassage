@@ -590,7 +590,6 @@ img {
   font-size: 20px;
   border: none;
   border-radius: 8px;
-
   margin-top: 20px;
   padding: 12px 40px;
   width: auto;
@@ -608,6 +607,26 @@ img {
   color: white;
 }
 
+.priceList {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.pricelistText {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.priceListheading {
+  margin-top: 70px;
+}
 /* Desktop  */
 @media (min-width: 824px) {
   .navbar-nav {
