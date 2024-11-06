@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Avslappnings-massage
-    </title>
+    <title>Avslappnings-massage</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -19,13 +18,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img
             src="assets/img/logga.png"
             alt="Volkert Massage Logo"
-            style="width: 72px; height: 61.25px"
+            class="navbar-logo"
           />
         </a>
         <button
@@ -44,23 +43,74 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">Hem</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="om-mig.html"
-                >Om mig</a
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="om-mig.html"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
+                Om mig
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="about.html">Mer om mig</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="massageFalsterbo.html"
+                    >Massage i Falsterbo</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="om-mig.html"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Behandlingsmetoder
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="treatmentOne.html"
+                    >Svensk klassisk massage
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="treatmentTwo.html"
+                    >Triggerpunktsbehandling</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="treatmentThree.html"
+                    >Stretching</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="treatmentFour.html"
+                    >Avslappningsmassage</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="treatmentFive.html"
+                    >Akupressur matta (Spikmatta)</a
+                  >
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="behandlingar.html"
-                >Behandlingsmetoder</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="priser.html">Prislista</a>
+              <a class="nav-link" href="priceList.html">Prislista</a>
             </li>
           </ul>
-          <a href="#booking" class="btn btn-primary book-button ms-lg-3"
-            >Boka</a
-          >
+
+          <a href="booking.html" class="btn book-button ms-lg-3">Boka</a>
         </div>
       </div>
     </nav>
@@ -69,31 +119,35 @@
 
     <div class="booking-wrapper">
       <div class="full-width-containerBooking">
-        <h2 class="blue-headingBook">Avslappnings-massage
-        </h2>
-        <section class="profile-section profile-sectionMassage">
+        <h2 class="blue-headingBook">Avslappnings-massage</h2>
+        <section class="profile-sectionMassage">
           <div class="profile-content">
-            <div class="contact-item">
-             
-            <div class="textTreatment">
-              <p>
-                En lätt och mjuk massage som påminner om den klassiska svenska massagen. Massagen utförs med långsamma rörelser och skapar ro och avslappning både i kropp och sinne.
-              </p>
-              <p>Avslappningsmassage motverkar stresshormon men främjar avslappning och må bra-hormon vilket leder till mjukare muskler, bättre sömn, mindre stress och ökad blodcirkulation.</p>
-              
-              <p class="headingBook">När du bokar behandling
-              </p>
-            <p>Jag kombinerar olika behandlingsmetoder för att hjälpa dig på bästa sätt. Avslappnings-massage är en av de metoder jag kan komma att använda mig av under din behandling. 
+            <p>
+              En lätt och mjuk massage som påminner om den klassiska svenska
+              massagen. Massagen utförs med långsamma rörelser och skapar ro och
+              avslappning både i kropp och sinne.
+            </p>
+            <p>
+              Avslappningsmassge motverkar stresshormon men främjar avslappning
+              och må bra-hormon vilket leder till mjukare muskler, bättre sömn,
+              mindre stress och ökad blodcirkulation.
+            </p>
+            <p class="headingBook">När du bokar behandling</p>
+            <p>
+              Jag kombinerar olika behandlingsmetoder för att hjälpa dig på
+              bästa sätt. Avslappnings-massage är en av de metoder jag kan komma
+              att använda mig av under din behandling.
             </p>
             <div>
-                <button class="button-treatment">Boka behandling</button>
-              </div>
+              <a href="booking.html" class="button-treatment"
+                >Boka behandling</a
+              >
             </div>
           </div>
         </section>
       </div>
       <div class="booking-image">
-        <img src="assets/img/avslappning.png" alt="Booking" />
+        <img src="assets/img/avslappning.png" alt="massage" />
       </div>
     </div>
 
@@ -117,11 +171,31 @@
         <div class="footer-treatments">
           <h3>Behandlingsmetoder</h3>
           <ul>
-            <li>Svensk klassisk massage</li>
-            <li>Triggerpunkts-behandling</li>
-            <li>Stretching</li>
-            <li>Avslappnings-massage</li>
-            <li>Akupressur matta</li>
+            <li>
+              <a href="treatmentOne.html" class="link-treatment"
+                >Svensk klassisk massage</a
+              >
+            </li>
+            <li>
+              <a href="treatmentTwo.html" class="link-treatment"
+                >Triggerpunkts-behandling</a
+              >
+            </li>
+            <li>
+              <a href="treatmentThree.html" class="link-treatment"
+                >Stretching</a
+              >
+            </li>
+            <li>
+              <a href="treatmentFour.html" class="link-treatment"
+                >Avslappnings-massage</a
+              >
+            </li>
+            <li>
+              <a href="treatmentFive.html" class="link-treatment"
+                >Akupressur matta</a
+              >
+            </li>
           </ul>
         </div>
       </div>
